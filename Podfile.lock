@@ -1,0 +1,16 @@
+PODS:
+  - PointCheckoutSdk (0.1)
+
+DEPENDENCIES:
+  - PointCheckoutSdk (from `../merchant-ios-sdk`)
+
+EXTERNAL SOURCES:
+  PointCheckoutSdk:
+    :path: "../merchant-ios-sdk"
+
+SPEC CHECKSUMS:
+  PointCheckoutSdk: 41d0107fa95c5c53f0ffd5240b340044d6ec0188
+
+PODFILE CHECKSUM: 72194cb617faf66b0f6337ad16636634743f1e76
+
+COCOAPODS: 1.8.4
