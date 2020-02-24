@@ -5,6 +5,6 @@ target 'iossdkdemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'PointCheckoutSdk', :path => '../merchant-ios-sdk'
+  pod 'PointCheckoutSdk', :git => 'git@github.com:pointcheckout/merchant-ios-sdk.git', :tag=> 0.1
 
 end
