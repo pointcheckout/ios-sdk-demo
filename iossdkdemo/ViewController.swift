@@ -20,9 +20,7 @@ class ViewController: UIViewController, PaymentDelegate{
     }
     
     @IBAction func checkout(_ sender: UIButton) {
-        let client = PointCheckoutClient(environment: PointCheckoutEnvironment.TEST)
-        client.setLanguage(iso2: "ar")
-        client.pay(controller: self, checkoutKey: txtCheckoutKey.text!, delegate: self)
+        PointCheckoutClient.pay(controller: self, paymentUrl: txtCheckoutKey.text!,resultUrl:"sameer://sameer/redirect", delegate: self)
     }
     
     func onPaymentUpdate(){
