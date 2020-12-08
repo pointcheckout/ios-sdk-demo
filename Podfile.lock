@@ -2,15 +2,21 @@ PODS:
   - PointCheckoutSdk (1.1)
 
 DEPENDENCIES:
-  - PointCheckoutSdk (from `../merchant-ios-sdk`)
+  - "PointCheckoutSdk (from `git@github.com:pointcheckout/merchant-ios-sdk.git`, tag `v1.1`)"
 
 EXTERNAL SOURCES:
   PointCheckoutSdk:
-    :path: "../merchant-ios-sdk"
+    :git: "git@github.com:pointcheckout/merchant-ios-sdk.git"
+    :tag: v1.1
+
+CHECKOUT OPTIONS:
+  PointCheckoutSdk:
+    :git: "git@github.com:pointcheckout/merchant-ios-sdk.git"
+    :tag: v1.1
 
 SPEC CHECKSUMS:
   PointCheckoutSdk: 55da2d45561767d73f5b919e0b5b8c250db5b91d
 
-PODFILE CHECKSUM: bf99008f53dc61f7f9db90b5bada1c7dc78ccf21
+PODFILE CHECKSUM: 76606e709976f2b5244c1f0cba4b454d201506e7
 
 COCOAPODS: 1.8.4

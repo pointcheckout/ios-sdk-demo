@@ -20,7 +20,7 @@ class ViewController: UIViewController, PaymentDelegate{
     }
     
     @IBAction func checkout(_ sender: UIButton) {
-        PointCheckoutClient.pay(controller: self, redirectUrl: txtCheckoutKey.text!,resultUrl:"sameer://sameer/redirect", delegate: self)
+        PointCheckoutClient.pay(controller: self, redirectUrl: txtCheckoutKey.text!,resultUrl:"https://resultUrl", delegate: self)
     }
     
     func onPaymentUpdate(){
