@@ -13,6 +13,7 @@ class ViewController: UIViewController, PaymentDelegate{
     
     @IBOutlet weak var btnCheckout: UIButton!
     @IBOutlet weak var txtCheckoutKey: UITextField!
+    var client = PointCheckoutClient(environment: PointCheckoutEnvironment.TEST)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +21,14 @@ class ViewController: UIViewController, PaymentDelegate{
     }
     
     @IBAction func checkout(_ sender: UIButton) {
-        PointCheckoutClient.pay(controller: self, redirectUrl: txtCheckoutKey.text!,resultUrl:"https://resultUrl", delegate: self)
+        client.pay(controller: self, checkoutKey: txtCheckoutKey.text ?? "", delegate: self)
     }
     
-    func onPaymentUpdate(){
+    func onUpdate(){
         print("UPDATE WAS CALLED")
     }
     
-    func onPaymentCancel(){
+    func onDismiss(){
         print("CANCEL WAS CALLED")
     }
 }
